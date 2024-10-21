@@ -7,6 +7,7 @@ Este es el diseño de la actividad principal (MainActivity). Utiliza un Relative
 La Toolbar se establece como la barra de acción de la aplicación, utilizando un color de fondo y un tema específicos.
 El FragmentContainerView es donde se cargarán los fragments (pantallas) de la aplicación, comenzando por DoctorSelectionFragment.
 
+
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -38,6 +39,7 @@ MainActivity es la actividad principal de la aplicación.
 Se inicializa el ViewModel compartido para manejar la información que se pasará entre los fragments.
 La Toolbar se configura para ser la barra de acción de la actividad.
 Si es la primera vez que se crea la actividad, se carga el DoctorSelectionFragment.
+
 
 
 package com.example.reservadecitasmdicas
@@ -79,6 +81,7 @@ Este fragmento contiene un RecyclerView que se usará para mostrar una lista de 
 Se utiliza un LinearLayout para organizar los elementos en una columna vertica
 
 
+
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
@@ -99,6 +102,7 @@ Se utiliza un LinearLayout para organizar los elementos en una columna vertica
 Este fragmento permite al usuario ver el nombre y especialidad del doctor seleccionado y elegir una fecha y hora para la cita.
 Incluye un DatePicker para seleccionar la fecha y un TimePicker para seleccionar la hora.
 Un botón "Siguiente" se utiliza para avanzar a la siguiente pantalla.
+
 
 
 <?xml version="1.0" encoding="utf-8"?>
@@ -147,6 +151,7 @@ especialidad, fecha y hora de la cita.
 Un botón "Confirmar" permite al usuario confirmar la cita.
 
 
+
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
@@ -190,6 +195,7 @@ Un botón "Confirmar" permite al usuario confirmar la cita.
 
 Este diseño representa un ítem individual en la lista de doctores que se muestra en el RecyclerView.
 Contiene dos TextView que muestran el nombre y la especialidad del doctor.
+
 
 
 <?xml version="1.0" encoding="utf-8"?>
