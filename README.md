@@ -8,6 +8,7 @@ La Toolbar se establece como la barra de acción de la aplicación, utilizando u
 El FragmentContainerView es donde se cargarán los fragments (pantallas) de la aplicación, comenzando por DoctorSelectionFragment.
 
 
+
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
